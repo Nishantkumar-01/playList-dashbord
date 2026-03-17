@@ -4,8 +4,132 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Playlist</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        
+        <div class="musicContainer">
+            <div class="HeadingArea">
+                <svg id="fav" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Gradient Background -->
+                        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#5f2eea"/>
+                        <stop offset="100%" stop-color="#8fd3c7"/>
+                        </linearGradient>
+                    </defs>
+    
+                    <!-- Rounded Background -->
+                    <rect x="0" y="0" width="200" height="200" rx="10" fill="url(#bgGradient)" />
+    
+                    <!-- Heart Shape -->
+                    <path 
+                        d="M100 140 
+                        C100 140, 40 100, 40 70
+                        C40 50, 55 40, 70 40
+                        C85 40, 100 55, 100 55
+                        C100 55, 115 40, 130 40
+                        C145 40, 160 50, 160 70
+                        C160 100, 100 140, 100 140Z"
+                        fill="white"
+                    />
+                </svg>
+                <div class="heading">
+                    <p>Playlist</p>
+                    <h1>Liked Songs</h1>
+                    <p>Ram Kumar <span>&#x2022 136 songs</span></p>
+                </div>
+            </div>
+            <div class="mainArea">
+                <div class="cont">
+                    <div class="musicPlayers">
+                        <img id="play" src="/img/play_icon_transparent.png" alt="">
+                        <img class="remix" src="/img/player_icon1.png" alt="">
+                        <i class="fa-regular fa-circle-down downloads"></i>
+                    </div>
+                    <p>List <i class="fa-solid fa-list"></i></p>
+                </div>
+                <div class="container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Album</th>
+                                <th>Date Added</th>
+                                <th><i class="fa-regular fa-clock"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="song">
+                                    <img class="thumnail" src="/img/card4img.jpeg" alt="songIcon">
+                                    <div>
+                                        <p class="title">MONTAGEM ASTRA...</p>
+                                        <span>DJ MH, DJ ZRED</span>
+                                    </div>
+                                </td>
+                                <td>MONTAGEM ASTRA</td>
+                                <td>Mar 10, 2025</td>
+                                <td>1:20</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="song">
+                                    <img class="thumnail" src="/img/card4img.jpeg" alt="songIcon">
+                                    <div>
+                                        <p class="title">MONTAGEM ASTRA...</p>
+                                        <span>DJ MH, DJ ZRED</span>
+                                    </div>
+                                </td>
+                                <td>MONTAGEM ASTRA</td>
+                                <td>Mar 10, 2025</td>
+                                <td>1:20</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="song">
+                                    <img class="thumnail" src="/img/card4img.jpeg" alt="songIcon">
+                                    <div>
+                                        <p class="title">MONTAGEM ASTRA...</p>
+                                        <span>DJ MH, DJ ZRED</span>
+                                    </div>
+                                </td>
+                                <td>MONTAGEM ASTRA</td>
+                                <td>Mar 10, 2025</td>
+                                <td>1:20</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="song">
+                                    <img class="thumnail" src="/img/card4img.jpeg" alt="songIcon">
+                                    <div>
+                                        <p class="title">MONTAGEM ASTRA...</p>
+                                        <span>DJ MH, DJ ZRED</span>
+                                    </div>
+                                </td>
+                                <td>MONTAGEM ASTRA</td>
+                                <td>Mar 10, 2025</td>
+                                <td>1:20</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="song">
+                                    <img class="thumnail" src="/img/card4img.jpeg" alt="songIcon">
+                                    <div>
+                                        <p class="title">MONTAGEM ASTRA...</p>
+                                        <span>DJ MH, DJ ZRED</span>
+                                    </div>
+                                </td>
+                                <td>MONTAGEM ASTRA</td>
+                                <td>Mar 10, 2025</td>
+                                <td>1:20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
